@@ -10,8 +10,8 @@ describe Takeaway do
     "Burger" => 5,
     "Ramen" => 10,
     "Pizza" => 20
+    }
   }
-}
 
   context '#menu' do
     
@@ -20,6 +20,16 @@ describe Takeaway do
       expect(subject.menu).to eq list
     end
 
+  end
+
+  context '#order' do
+    
+    it 'adds dishes to basket' do
+      subject.order("Chips")
+      expect(subject.basket).to eq [:Chips]
+
+      
+    end
   end
 
 end
