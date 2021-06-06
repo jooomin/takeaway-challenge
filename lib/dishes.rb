@@ -1,16 +1,15 @@
 class Dishes
 
   DISHES = {
-    "curry" => 8,
-    "chips" => 4,
-    "whopper" => 5,
-    "ramen" => 10,
-    "pizza" => 20,
+    "Curry" => 8,
+    "Chips" => 4,
+    "Burger" => 5,
+    "Ramen" => 10,
+    "Pizza" => 20
   }
 
-  def menu
+  def list
     DISHES
   end
 
 end
-
